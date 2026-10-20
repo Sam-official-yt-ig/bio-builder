@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build Your Bio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎨 Build Your Bio</h1>
+    <p class="subtitle">Minimalist design. Maximum rizz.</p>
+
+    <!-- Profile Info Section -->
+    <div class="input-section">
+      <h2>Profile Info</h2>
+      <label for="card-color">Card Background Color:</label>
+      <input type="color" id="card-color" value="#1e293b">
+      
+      <input type="text" id="username" placeholder="Username (e.g. @YourName)">
+      <input type="text" id="tagline" placeholder="Tagline (e.g. Creator / Code Warrior)">
+    </div>
+
+    <!-- Links Section -->
+    <div class="input-section">
+      <h2>Your Links</h2>
+      <input type="text" id="link1-title" placeholder="Link 1 Title (e.g. My Website)">
+      <input type="text" id="link1-url" placeholder="Link 1 URL">
+
+      <h3>Social Media Links</h3>
+      <input type="text" id="instagram-url" placeholder="Instagram Profile URL">
+      <input type="text" id="twitter-url" placeholder="Twitter / X Profile URL">
+    </div>
+
+    <!-- Action Button -->
+    <button id="generate-btn">Generate My Code! ✨</button>
+
+    <!-- Output Section -->
+    <div id="output-box" class="hidden">
+      <h3>Your Generated HTML 🚀</h3>
+      <textarea id="generated-html" readonly></textarea>
+      <button id="copy-btn">Copy Code 📋</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
